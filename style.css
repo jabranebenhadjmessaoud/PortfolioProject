@@ -16,6 +16,7 @@
     gap: 50px;
     align-items: center ;
     height: 100%;
+    padding-top: 20px;
 }
 .navbar img{
     width: 200px;
@@ -43,12 +44,34 @@
     align-items: center;
     flex-direction: column;
     gap: 100px;
+    color: white;
 }
+.home h1{
+    color: #14B798;
+}
+
 .top{
     display: flex;
     align-items: center;
     gap: 50px;
 }
+/* style for the transaction */ 
+@keyframes fading {
+    from { 
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    } 
+    }
+.top h2{
+    animation: fading .9s;
+    color: #14B798;
+}
+
+
 .top img{
     width: 400px;
 }
@@ -64,3 +87,4 @@
     flex-direction: column;
     align-items: center;
 }
+/* end of home */
