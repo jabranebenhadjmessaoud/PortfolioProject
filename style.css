@@ -2,4 +2,39 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+<<<<<<< HEAD
+=======
+}
+.container{
+    display:flex;
+    background-color: #272C32;
+}
+.navbar{
+    flex: 3;
+    background-color: #2A2E37 ;
+    color: #14B798;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    gap: 50px;
+    align-items: center ;
+}
+.navbar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #14B798;
+}
+.pages{
+    flex: 6;
+>>>>>>> c1f2541c769bb935287c6b085f82fb74ab1c4f4b
 }
