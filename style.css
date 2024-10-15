@@ -48,7 +48,7 @@ html{
             width: 100%;
 }
 /* animation */
-@keyframes slide-left{
+@keyframes slide-up{
     from{
         transform: translateY(+100px);
     }
@@ -75,7 +75,6 @@ html{
         opacity: 1;
     }
 }
-
 /* styling home */
 .home{
     display: flex;
@@ -98,7 +97,7 @@ html{
     align-items: center;
     gap: 100px;
     justify-content: center;
-    animation: slide-left 1s ease-in;
+    animation: slide-up 1s ease-in;
 }
 .bottom img{
     width: 500px;
@@ -135,7 +134,7 @@ html{
     gap: 50px;
     justify-content: center;
     font-size: 30px;
-    animation: slide-left 1s ease-in;
+    animation: slide-up 1s ease-in;
 }
 .row-2 img{
     width: 500px;
@@ -257,4 +256,9 @@ html{
     z-index: -1;
     background-color: #4070f4;
     transform: translateX(-50%) rotate(45deg);
+}
+.pa{
+    animation: slide 1s ease-in;
+    text-align: center;
+    font-size: 30px;
 }
