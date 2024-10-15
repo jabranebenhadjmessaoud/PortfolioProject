@@ -3,6 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     background-color: #272C32;
     display: flex;
@@ -23,8 +26,8 @@
     align-items: center;
 }
 .navbar img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 .navbar ul{
