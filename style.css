@@ -105,4 +105,20 @@
     height: 500px;
     border-radius: 15px;
 }
-/* end About */
+/* end About *//* begin of skills */
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #272C32
+}
+.skillss {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.html {width: 90%; background-color: #A6BBCC;}
+.css {width: 80%; background-color: #A6BBCC;}
+.js {width: 65%; background-color: #A6BBCC;}
+.php {width: 60%; background-color: #A6BBCC;}
