@@ -5,18 +5,22 @@
 }
 .container{
     background-color: #272C32;
+    display: flex;
 }
 .navbar{
-    width: 20%;
-    background-color: #2A2E37 ;
-    color: #14B798;
+    width: 250px;
+    background-color: #2A2E37;
+    color: #A6BBCC;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    gap: 50px;
-    align-items: center ;
-    height: 100%;
-    padding-top: 20px;
+    gap: 40px;
+    align-items: center;
 }
 .navbar img{
     width: 200px;
@@ -31,60 +35,57 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: #14B798;
+    color:white;
 }
 .pages{
-
+    margin-left: 250px; 
+            padding: 20px;
+            height: 100vh; 
+            box-sizing: border-box;
+            color: aliceblue;
+            width: 100%;
 }
 
 /* styling home */
-
 .home{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 100px;
-    color: white;
+    gap: 50px;
 }
-.home h1{
-    color: #14B798;
-}
-
 .top{
     display: flex;
     align-items: center;
     gap: 50px;
+    color: #A6BBCC;
 }
-/* style for the transaction */ 
-@keyframes fading {
-    from { 
-        opacity: 0;
-        transform: scale3d(.75, .75, 1);
-    }
-    to {
-        opacity: 1;
-        transform: scale3d(1, 1, 1);
-    } 
-    }
-.top h2{
-    animation: fading .9s;
-    color: #14B798;
-}
-
-
-.top img{
-    width: 400px;
+.top hr{
+    width: 100%;
+    background-color: #A6BBCC;
 }
 .bottom{
     display: flex;
-    gap: 200px;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
 }
 .bottom img{
-    width: 250px;
+    width: 500px;
+    border-radius: 15px;
 }
-.developer ,.probleme{
+.left{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 40px;
 }
+.left h2{
+    color: #A6BBCC;
+}
+.left a{
+    text-decoration: none;
+    color: white;
+}
+
+
 /* end of home */
