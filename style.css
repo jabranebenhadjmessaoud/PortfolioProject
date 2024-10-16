@@ -10,6 +10,7 @@ html{
     background-color: #272C32;
     display: flex;
 }
+/* styling navbar */
 .navbar{
     width: 250px;
     background-color: #2A2E37;
@@ -39,7 +40,16 @@ html{
 .navbar ul li a{
     text-decoration: none;
     color:white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
 }
+.navbar ul li a:hover{
+    background-color: rgb(12, 32, 68);
+}
+/* end navbar */
+
+
 .pages{
     margin-left: 250px; 
             padding: 20px;
@@ -48,12 +58,12 @@ html{
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 100px;
+            gap: 30px;
 }
 /* animation */
 @keyframes slide-up{
     from{
-        transform: translateY(-50px);
+        transform: translateY(-100px);
     }
     to{
         transform: translateX(0);
@@ -65,7 +75,7 @@ html{
         transform: translateX(0px);
     }
     to{
-        transform: translateX(-50px);
+        transform: translateX(-10px);
     }
 }
 @keyframes progress {
@@ -78,6 +88,8 @@ html{
         opacity: 1;
     }
 }
+
+
 /* styling home */
 .home{
     display: flex;
@@ -129,6 +141,7 @@ html{
 }
 /* end of home */
 
+
 /* styling About */
 .about{
     display: flex;
@@ -154,6 +167,8 @@ html{
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset , -10px -10px 10px #3c444e inset;
 }
 /* end About */
+
+
 /* begin of skills */
 .skills{
     display: flex;
@@ -277,7 +292,74 @@ html{
     text-align: center;
     font-size: 30px;
 }
-.active{
-    opacity: 4;
-    transform: translateY(0);
+
+/* end skiils */
+
+/* styling Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  solid white;
+    border-radius: 10px;
+    width: 40%;
+    height: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 20px;
+}
+input{
+    height: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+textarea{
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+}
+button{
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #272C32;
+    color: white;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+a img{
+    width: 100px;
+}
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    height: 40px;
+
+}
+.down img{
+    width: 20px;
 }
