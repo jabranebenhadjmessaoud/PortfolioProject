@@ -89,6 +89,14 @@ html{
         opacity: 1;
     }
 }
+@keyframes waviy {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-20px)
+    }
+}
 
 
 /* styling home */
@@ -122,6 +130,13 @@ html{
 .bottom img{
     width: 500px;
     border-radius: 15px;
+    opacity: 0;
+    transform: translateX(+200px);
+    transition: transform 3s ease, opacity 3s ease;
+}
+.user.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 .left{
     display: flex;
@@ -140,7 +155,6 @@ html{
 .bottom:hover{
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #3c444e;
 }
-
 .wave {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
@@ -154,17 +168,8 @@ html{
     text-transform: uppercase;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i));
-    
-}
-@keyframes waviy {
-    0%,40%,100% {
-    transform: translateY(0)
-    }
-    20% {
-    transform: translateY(-20px)
-    }
-}
 
+}
 /* end of home */
 
 
@@ -188,6 +193,13 @@ html{
     width: 500px;
     height: 500px;
     border-radius: 15px;
+    opacity: 0;
+    transform: translateY(+200px);
+    transition: transform 3s ease, opacity 3s ease;
+}
+.camputer.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 .row-2:hover{
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset , -10px -10px 10px #3c444e inset;
@@ -196,6 +208,15 @@ html{
 
 
 /* begin of skills */
+.levelbar{
+    opacity: 0;
+    transform: translateX(+200px);
+    transition: transform 3s ease, opacity 3s ease;
+}
+.levelbar.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
 .skills{
     display: flex;
     flex-direction: column;
@@ -321,7 +342,10 @@ html{
 
 /* end skiils */
 
-/* begin of projects  */
+
+
+
+/* styling Project */
 
 .projects{
     display: flex;
@@ -357,8 +381,10 @@ html{
     border-radius: 10px;
 }
 
+/* end Project */
 
-/* end of projects  */
+
+
 
 /* styling Contact */
 .contact{
@@ -367,7 +393,7 @@ html{
     gap: 50px;
 }
 
-.form{
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,21 +404,31 @@ html{
     padding: 20px;
     margin: 0 auto;
     gap: 20px;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: transform 3s ease, opacity 3s ease;
 }
-.form:hover{
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px black;
+form.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+form:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset , -10px -10px 10px black;
 }
 input{
     height: 30px;
     width: 80%;
     border-radius: 10px;
+    padding-left: 25px;
 }
 textarea{
     height: 50px;
     width: 80%;
     border-radius: 10px;
+    padding-left: 25px;
 }
-button{
+
+.submit{
     width: 70%;
     height: 30px;
     border-radius: 10px;
@@ -426,9 +462,16 @@ a img{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    border: rgb(255,181,0) 1px solid;
+    border-radius: 35px;
+    letter-spacing: 2px;
     width: 300px;
     height: 40px;
-
+    text-decoration: none;
+    color: white;
+}
+.down:hover{
+    background-color: rgb(255,181,0);
 }
 .down img{
     width: 20px;
