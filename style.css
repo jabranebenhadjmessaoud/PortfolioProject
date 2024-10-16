@@ -40,8 +40,8 @@ html{
     text-decoration: none;
     color:white;
     padding: 5px 15px;
-    border-radius:15px;
-    transition: 0.25s;
+    border-radius: 20px;
+    transition: 0.5s;
 }
 .navbar ul li a:hover{
     background-color: rgb(12, 32, 68);
@@ -84,6 +84,8 @@ html{
         opacity: 1;
     }
 }
+
+
 /* styling home */
 .home{
     display: flex;
@@ -160,6 +162,8 @@ html{
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset , -10px -10px 10px #3c444e inset;
 }
 /* end About */
+
+
 /* begin of skills */
 .skills{
     display: flex;
@@ -283,7 +287,37 @@ html{
     text-align: center;
     font-size: 30px;
 }
-.active{
-    opacity: 4;
-    transform: translateY(0);
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pframe{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.fra1{
+    display: flex;
+    justify-content: space-around;
+}
+.fra2{
+    display: flex;
+    justify-content: space-around;
+}
+.frame{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.frame h2 a{
+    color: white;
+    text-decoration: none;
+}
+.frame img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
 }
