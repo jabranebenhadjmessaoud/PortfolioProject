@@ -46,12 +46,6 @@ html{
 }
 .navbar ul li a:hover{
     background-color: rgb(12, 32, 68);
-    padding: 5px 15px;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-.navbar ul li a:hover{
-    background-color: rgb(12, 32, 68);
 }
 /* end navbar */
 
@@ -94,8 +88,6 @@ html{
         opacity: 1;
     }
 }
-
-
 
 
 /* styling home */
@@ -301,6 +293,10 @@ html{
     font-size: 30px;
 }
 
+/* end skiils */
+
+/* begin of projects  */
+
 .projects{
     display: flex;
     flex-direction: column;
@@ -333,4 +329,81 @@ html{
     width: 400px;
     height: 300px;
     border-radius: 10px;
+}
+
+
+/* end of projects  */
+
+/* styling Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  solid white;
+    border-radius: 10px;
+    width: 40%;
+    height: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.form:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px black;
+}
+input{
+    height: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+textarea{
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+}
+button{
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #272C32;
+    color: white;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icon a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+a img{
+    width: 100px;
+}
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    height: 40px;
+
+}
+.down img{
+    width: 20px;
 }
