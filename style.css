@@ -25,7 +25,7 @@ html{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    align-items: center;
+    text-align: center;
 }
 .navbar img{
     width: 250px;
@@ -41,7 +41,7 @@ html{
 .navbar ul li a{
     text-decoration: none;
     color:white;
-    padding: 5px 15px;
+    padding: 10px 50px;
     border-radius: 20px;
     transition: 0.5s;
 }
@@ -59,7 +59,7 @@ html{
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 200px;
 }
 /* animation */
 @keyframes slide-up{
@@ -95,6 +95,12 @@ html{
     }
     20% {
     transform: translateY(-20px)
+    }
+}
+@keyframes fade-in{
+    to{
+        scale: 1;
+        opacity: 1;
     }
 }
 
@@ -379,6 +385,12 @@ html{
     width: 400px;
     height: 300px;
     border-radius: 10px;
+    scale: .10;
+    opacity: 0;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: contain 1000px;
 }
 
 /* end Project */
@@ -392,6 +404,10 @@ html{
     flex-direction: column;
     gap: 50px;
 }
+.co-bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 form{
     display: flex;
@@ -400,10 +416,10 @@ form{
     border:  solid white;
     border-radius: 10px;
     width: 40%;
-    height: 70%;
+    height: 450px;
     padding: 20px;
-    margin: 0 auto;
-    gap: 20px;
+    padding-top: 50px;
+    gap: 40px;
     opacity: 0;
     transform: translateX(-200px);
     transition: transform 3s ease, opacity 3s ease;
@@ -437,8 +453,10 @@ textarea{
 }
 .social{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    justify-content: center;
 }
 .icon{
     display: flex;
@@ -455,7 +473,10 @@ textarea{
     color: white;
 }
 a img{
-    width: 100px;
+    width: 50px;
+}
+a p{
+    font-size: small;
 }
 .down{
     display: flex;
