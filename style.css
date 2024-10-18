@@ -172,7 +172,7 @@ html{
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
-    animation: waviy 1s infinite;
+    animation: waviy 1.5s infinite;
     animation-delay: calc(.1s * var(--i));
 
 }
@@ -362,7 +362,7 @@ html{
 .pframe{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 100px;
 }
 .fra1{
     display: flex;
@@ -385,12 +385,48 @@ html{
     width: 400px;
     height: 300px;
     border-radius: 10px;
-    scale: .10;
+    /* scale: .10;
     opacity: 0;
     animation: fade-in linear;
     animation-timeline: view();
     animation-range-start: cover;
-    animation-range-end: contain 1000px;
+    animation-range-end: contain 1000px; */
+}
+#right1{
+    opacity: 0;
+    transform: translateX(+200px);
+    transition: transform 3s ease, opacity 3s ease;
+}
+#right2{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: transform 3s ease, opacity 3s ease;
+}
+#tople{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: transform 3s ease, opacity 3s ease;
+}
+#butle{
+    opacity: 0;
+    transform: translateX(+200px);
+    transition: transform 3s ease, opacity 3s ease;
+}
+#right1.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+#right2.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+#tople.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+#butle.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* end Project */
@@ -429,7 +465,7 @@ form.visible{
     transform: translateX(0);
 }
 form:hover{
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset , -10px -10px 10px black;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1)  , -10px -10px 10px black;
 }
 input{
     height: 30px;
